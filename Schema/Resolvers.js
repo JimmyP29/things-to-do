@@ -5,8 +5,20 @@ const resolvers = {
         getAllTodos() {
             return todos;
         },
-        getTodo(_, args) {
-            return todos.find(todo => todo.id === args.id)
+        getTodo(_, { id }) {
+            return todos.find(todo => todo.id === id)
+        }
+    },
+    Mutation: {
+        createTodo(_, { description }) {
+            const todo = {
+                id: todos.length + 1,
+                description,
+                isCompleted: false,
+            };
+
+            todos.push(todo);
+            return todo;
         }
     }
 };

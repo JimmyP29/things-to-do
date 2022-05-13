@@ -14,6 +14,9 @@ const typeDefs = gql`
     }
 
     # Mutations
+    type Mutation {
+        createTodo(description: String!): Todo!
+    }
 `;
 
 module.exports = { typeDefs };
