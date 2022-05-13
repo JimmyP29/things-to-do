@@ -31,9 +31,6 @@ const resolvers = {
             const todo = todos.find(todo => todo.id === id);
             let todoIndex = todos.findIndex(todo => todo.id === id);
 
-            // if (!todo) { return null; }
-
-            // todos = [...todos, { ...todo, description, isCompleted }];
             if (todoIndex !== -1)
                 todos[todoIndex] = { id, description, isCompleted, userId: todo.userId };
 
