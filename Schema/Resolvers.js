@@ -35,6 +35,20 @@ const resolvers = {
                 todos[todoIndex] = { id, description, isCompleted, userId: todo.userId };
 
             return todos[todoIndex];
+        },
+        toggleTodoIsCompleted(_, { id, }) {
+            const todo = todos.find(todo => todo.id === id);
+            let todoIndex = todos.findIndex(todo => todo.id === id);
+
+            if (todoIndex !== -1)
+                todos[todoIndex] = {
+                    id,
+                    description: todo.description,
+                    isCompleted: !todo.isCompleted,
+                    userId: todo.userId
+                };
+
+            return todos[todoIndex];
         }
     }
 };

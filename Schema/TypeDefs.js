@@ -76,6 +76,10 @@ const typeDefs = gql`
         Updates an existing todo in the system by the given todo details
         """
         updateTodo(id: Int, description: String, isCompleted: Boolean): Todo
+        """
+        Toggles an existing todo to be completed, or not.
+        """
+        toggleTodoIsCompleted(id: Int): Todo
     }
 `;
 
