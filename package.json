@@ -1,0 +1,17 @@
+{
+  "name": "things-to-do",
+  "version": "1.0.0",
+  "description": "A simple Node API for demonstrating GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "James Privett",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.7.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
