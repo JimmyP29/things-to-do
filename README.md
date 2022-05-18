@@ -1,5 +1,5 @@
 # Things to do
-A simple Node API for demonstrating [GraphQL](https://graphql.org/) using [Apollo](https://www.apollographql.com/).
+A simple Node.js Express API for demonstrating [GraphQL](https://graphql.org/) using [Apollo](https://www.apollographql.com/).
 
 
 ## Getting started
